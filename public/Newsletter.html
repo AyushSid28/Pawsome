@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawSome Newsletter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E6E6FA; /* Lavender background */
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: blueviolet;
+      color: white;
+      padding: 20px;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 50px; /* Adjust the logo size */
+      height: auto;
+    }
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .newsletter-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .newsletter-text {
+      font-size: 1.1em;
+      color: #333;
+      line-height: 1.6;
+    }
+    .subscribe-section {
+      background-color: #e6e6fa;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .subscribe-section h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .subscribe-form input,
+    .subscribe-form select {
+      padding: 10px;
+      width: calc(100% - 24px);
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    .subscribe-form button {
+      padding: 10px 20px;
+      background-color: #800000; /* Maroon button */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    .subscribe-form button:hover {
+      background-color: #990000; /* Darker maroon for hover */
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo.png" alt="PawSome Logo" class="logo">
+    <div>
+      <h1>PawSome Newsletter</h1>
+      <p>Stay updated with our latest news and adoption stories!</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2 class="newsletter-title">Latest Edition - March 2024</h2>
+    <p class="newsletter-text">
+      Welcome to our March 2024 edition! In this issue, we feature heartwarming stories of animal rescues, 
+      updates on our upcoming adoption events, and tips on how you can get involved in helping street animals. 
+      We also share the success stories of pets that have found their forever homes through PawSome. Stay tuned 
+      for more exciting updates!
+    </p>
+
+    <p class="newsletter-text">
+      Our mission at PawSome is to bring communities together and provide street animals with better lives. 
+      Join us as we continue to grow our network and help more animals find their loving homes.
+    </p>
+  </div>
+
+  <div class="subscribe-section">
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Get the latest updates delivered straight to your inbox!</p>
+    <form action="/subscribe" method="POST" class="subscribe-form">
+      <input type="text" name="name" placeholder="Enter your full name" required>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <select name="preference" required>
+        <option value="">Select your preference</option>
+        <option value="adoption">Adoption Stories</option>
+        <option value="volunteering">Volunteering Opportunities</option>
+        <option value="events">Upcoming Events</option>
+        <option value="general">General Updates</option>
+      </select>
+      <input type="checkbox" name="agree" required>
+      <label for="agree">Agree to receive email updates from PawSome</label><br><br>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 PawSome. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

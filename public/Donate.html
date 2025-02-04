@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lavender;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo-image {
+      width: 150px; /* Adjusted logo size */
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto; /* Adjusted margin */
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .donation-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .donation-info p {
+      font-size: 18px;
+    }
+
+    .donation-options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .donation-options button {
+      background-color: #800000; /* Maroon color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 48%;
+    }
+
+    .donation-options button:hover {
+      background-color: #7a0000;
+    }
+
+    .donation-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .donation-form button {
+      background-color: #800000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .donation-form button:hover {
+      background-color: #7a0000;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+      <a href="/"><img src="logo.png" alt="PawSome Logo" class="logo-image" /></a>
+  </div>
+
+  <div class="container">
+    <h2>Support PawSome with Your Donation</h2>
+
+    <div class="donation-info">
+      <p>Your donation helps us provide shelter, food, medical care, and love to street animals.</p>
+      <p>Every contribution, no matter how small, makes a big difference in the lives of these animals.</p>
+    </div>
+
+    <div class="donation-options">
+      <button onclick="window.location.href='https://paymentgatewaylink.com'">One-Time Donation</button>
+      <button onclick="window.location.href='https://paymentgatewaylink.com'">Monthly Donation</button>
+    </div>
+
+    <h3>Donate Any Amount</h3>
+    <form action="https://paymentgatewaylink.com" method="POST" class="donation-form">
+      <input type="number" name="donationAmount" placeholder="Enter donation amount" required>
+      <button type="submit">Donate Now</button>
+    </form>
+  </div>
+
+</body>
+</html>

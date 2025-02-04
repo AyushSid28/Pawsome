@@ -1,0 +1,142 @@
+/* Header Section Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e6e6fa; /* Light lavender background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo Styling */
+.logo-image {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navbar Links */
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #800000;
+    text-decoration: underline;
+}
+
+/* Video Section */
+.header-video {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 20%; /* Move the button further towards the left */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.join-us-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #800000; /* Maroon color */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join-us-button:hover {
+    background-color: #b30000; /* Darker maroon on hover */
+}
+
+/* Review Section Styles */
+.review-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e6f7ff; /* Soft pastel blue background */
+}
+
+.review-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e6e6fa; /* Light lavender background */
+}
+
+.newsletter-section h2 {
+    font-size: 28px;
+    color: #003366; /* Dark blue color */
+}
+
+.newsletter-section p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.newsletter-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #800000; /* Maroon color */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-section p {
+    margin-bottom: 60px; /* Increase space between paragraph and button */
+}
+
+.newsletter-button:hover {
+    background-color: #b30000; /* Darker maroon on hover */
+}

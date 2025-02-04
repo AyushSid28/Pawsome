@@ -1,0 +1,109 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+/* Footer Section Styles */
+.footer {
+    background-color: #222; /* Close to black */
+    color: white;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif; /* Applying a clean, modern font */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+.footer h3 {
+    font-family: 'Poppins', sans-serif; /* A stylish font for headings */
+    font-size: 1.5em; /* Slightly smaller and more professional */
+    margin-bottom: 20px;
+    font-weight: 500; /* Medium weight for a more professional look */
+}
+
+.footer p {
+    font-family: 'Roboto', sans-serif; /* Applying the Roboto font */
+    font-size: 0.9em;
+    margin-top: -15px; /* Slightly reduce the spacing below the title */
+    color: #bbb; /* Lighter color for text */
+}
+
+.contact-link {
+    color: white; /* Highlighted color for contact links */
+    text-decoration: bold;
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s;
+    display: block; /* Ensures each contact link is on a new line */
+    margin-top: 10px; /* Adds space between each contact link */
+}
+
+.contact-link:hover {
+    color: #800000; /* Maroon hover color */
+}
+
+/* Add margin to the contact information */
+.footer .footer-column p {
+    margin: 10px 0; /* Add margin to separate address, email, and phone */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Cleaner font for links */
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #800000; /* Maroon hover color */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons li a {
+    font-size: 1.7em;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #800000; /* Maroon hover color */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #777;
+    font-family: 'Roboto', sans-serif;
+}

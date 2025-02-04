@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us</title>
+  <style>
+    #option-container {
+      display: none; /* Initially hidden */
+    }
+  </style>
+</head>
+<body>
+  <div class="JoinUs-Container">
+    <h2>Join Us</h2>
+    <button id="join-container" onclick="showOption()">Join Us!</button>
+    <div id="option-container">
+      <button onclick="location.href='/login'">Login</button>
+      <button onclick="location.href='/register'">Register</button>
+    </div>
+  </div>
+
+  <script>
+    function showOption() {
+      // Hide the "Join Us!" button
+      document.getElementById("join-container").style.display = 'none';
+      
+      // Show the option container (Login/Register buttons)
+      document.getElementById("option-container").style.display = 'block';
+    }
+  </script>
+</body>
+</html>

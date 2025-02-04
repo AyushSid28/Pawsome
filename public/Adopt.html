@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Street Dog or Cat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lavender; /* Lavender background */
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo-image {
+      width: 150px; /* Adjusted logo size */
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto; /* Adjusted margin to avoid overlap with logo */
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #800000; /* Maroon color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #7a0000; /* Darker Maroon on hover */
+    }
+  </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="/"><img src="logo.png" alt="PawSome Logo" class="logo-image" /></a>
+    </div>
+
+  <div class="container">
+    <h2>Adopt a Street Dog or Cat</h2>
+    <form action="#" method="POST">
+      <label for="petType">Pet Type:</label>
+      <select id="petType" name="petType" required>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+
+      <label for="petName">Pet's Name (if known):</label>
+      <input type="text" id="petName" name="petName" placeholder="Enter pet's name" required>
+
+      <label for="age">Your Age:</label>
+      <input type="number" id="age" name="age" required placeholder="Enter your age">
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required placeholder="Enter your address">
+
+      <label for="contactNumber">Contact Number:</label>
+      <input type="text" id="contactNumber" name="contactNumber" required placeholder="Enter your contact number">
+
+      <label for="experience">Previous Experience with Pets:</label>
+      <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience with pets"></textarea>
+
+      <label for="reason">Why do you want to adopt?</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Why would you like to adopt this pet?"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>
